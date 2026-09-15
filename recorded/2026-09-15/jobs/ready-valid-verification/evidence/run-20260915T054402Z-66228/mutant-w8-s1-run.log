@@ -1,0 +1,3 @@
+FAIL_STABILITY_OR_ORDER: out_valid or out_data changed while stalled
+FATAL: /private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv:26: FAIL_STABILITY_OR_ORDER
+       Time: 90000  Scope: tb.fail

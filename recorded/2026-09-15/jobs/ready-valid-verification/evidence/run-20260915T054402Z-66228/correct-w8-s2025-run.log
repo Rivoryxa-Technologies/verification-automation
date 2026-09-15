@@ -1,0 +1,2 @@
+PASS seed=2025 width=8 accepted=213 emitted=213
+/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv:137: $finish called at 4186000 (1ps)

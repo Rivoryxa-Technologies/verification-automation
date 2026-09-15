@@ -1,0 +1,17 @@
+PASS correct_w1_s1: matched expected pass
+PASS correct_w1_s17: matched expected pass
+PASS correct_w1_s2026: matched expected pass
+PASS correct_w2_s1: matched expected pass
+PASS correct_w2_s17: matched expected pass
+PASS correct_w2_s2026: matched expected pass
+PASS correct_w3_s1: matched expected pass
+PASS correct_w3_s17: matched expected pass
+PASS correct_w3_s2026: matched expected pass
+PASS correct_w4_s1: matched expected pass
+PASS correct_w4_s17: matched expected pass
+PASS correct_w4_s2026: matched expected pass
+PASS correct_w7_s1: matched expected pass
+PASS correct_w7_s17: matched expected pass
+PASS correct_w7_s2026: matched expected pass
+PASS mutant_starvation_w4_s17: matched named expected failure
+Evidence: /private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/round-robin-verification/evidence/20260915T054406.242800Z/summary.json

@@ -1,0 +1,786 @@
+{
+  "schema_version": 1,
+  "run_id": "20260915T054404.488940Z-ce0eeb80",
+  "started_utc": "20260915T054404.488940Z",
+  "finished_utc": "2026-09-15T05:44:04.814062+00:00",
+  "repository": "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python_version": "3.9.6",
+  "iverilog_version": "Icarus Verilog version 13.0 (stable) (v13_0)",
+  "vvp_version": "Icarus Verilog runtime version 13.0 (stable) (v13_0)",
+  "timeout_seconds": 10.0,
+  "seeds": [
+    1,
+    17,
+    2026
+  ],
+  "configs": [
+    {
+      "name": "short_narrow",
+      "data_width": 8,
+      "stages": 2,
+      "bias": 3
+    },
+    {
+      "name": "default",
+      "data_width": 8,
+      "stages": 3,
+      "bias": 7
+    },
+    {
+      "name": "deep_wide",
+      "data_width": 16,
+      "stages": 5,
+      "bias": 257
+    }
+  ],
+  "source_sha256": {
+    "rtl/response_pipeline.sv": "d46e55dccb2546a76824af15e24620fbe58d5f0d9f82ae3058912537abe46da4",
+    "tb/tb_reset_recovery.sv": "45b0bf0d4c2497ca731502fb24f6ad39cfa95bc1b61d0ff960c9bfa20dc5e661",
+    "tools/run.py": "08247cabf80456d8076adbf8f7f88d75c4f8d359a689cfb8cecbd86a40cd6d9d"
+  },
+  "pass_marker": "TEST_PASS: reset recovery verified",
+  "mutant_failure_marker": "RESET_FLUSH_CHECK_FAILED:",
+  "test_failure_marker": "TEST_FAIL:",
+  "overall_pass": true,
+  "results": [
+    {
+      "config": {
+        "name": "short_narrow",
+        "data_width": 8,
+        "stages": 2,
+        "bias": 3
+      },
+      "variant": "correct",
+      "seed": 1,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=2",
+        "-D",
+        "BIAS=3",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.021702,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-correct.vvp",
+        "+SEED=1"
+      ],
+      "simulation_seconds": 0.011024,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "short_narrow-correct-seed1.log"
+    },
+    {
+      "config": {
+        "name": "short_narrow",
+        "data_width": 8,
+        "stages": 2,
+        "bias": 3
+      },
+      "variant": "correct",
+      "seed": 17,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=2",
+        "-D",
+        "BIAS=3",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.021702,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-correct.vvp",
+        "+SEED=17"
+      ],
+      "simulation_seconds": 0.011231,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "short_narrow-correct-seed17.log"
+    },
+    {
+      "config": {
+        "name": "short_narrow",
+        "data_width": 8,
+        "stages": 2,
+        "bias": 3
+      },
+      "variant": "correct",
+      "seed": 2026,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=2",
+        "-D",
+        "BIAS=3",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.021702,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-correct.vvp",
+        "+SEED=2026"
+      ],
+      "simulation_seconds": 0.011336,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "short_narrow-correct-seed2026.log"
+    },
+    {
+      "config": {
+        "name": "short_narrow",
+        "data_width": 8,
+        "stages": 2,
+        "bias": 3
+      },
+      "variant": "mutant",
+      "seed": 1,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=2",
+        "-D",
+        "BIAS=3",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019757,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-mutant.vvp",
+        "+SEED=1"
+      ],
+      "simulation_seconds": 0.011861,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "short_narrow-mutant-seed1.log"
+    },
+    {
+      "config": {
+        "name": "short_narrow",
+        "data_width": 8,
+        "stages": 2,
+        "bias": 3
+      },
+      "variant": "mutant",
+      "seed": 17,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=2",
+        "-D",
+        "BIAS=3",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019757,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-mutant.vvp",
+        "+SEED=17"
+      ],
+      "simulation_seconds": 0.011357,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "short_narrow-mutant-seed17.log"
+    },
+    {
+      "config": {
+        "name": "short_narrow",
+        "data_width": 8,
+        "stages": 2,
+        "bias": 3
+      },
+      "variant": "mutant",
+      "seed": 2026,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=2",
+        "-D",
+        "BIAS=3",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019757,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/short_narrow-mutant.vvp",
+        "+SEED=2026"
+      ],
+      "simulation_seconds": 0.011106,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "short_narrow-mutant-seed2026.log"
+    },
+    {
+      "config": {
+        "name": "default",
+        "data_width": 8,
+        "stages": 3,
+        "bias": 7
+      },
+      "variant": "correct",
+      "seed": 1,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=3",
+        "-D",
+        "BIAS=7",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019634,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-correct.vvp",
+        "+SEED=1"
+      ],
+      "simulation_seconds": 0.01039,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "default-correct-seed1.log"
+    },
+    {
+      "config": {
+        "name": "default",
+        "data_width": 8,
+        "stages": 3,
+        "bias": 7
+      },
+      "variant": "correct",
+      "seed": 17,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=3",
+        "-D",
+        "BIAS=7",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019634,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-correct.vvp",
+        "+SEED=17"
+      ],
+      "simulation_seconds": 0.010275,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "default-correct-seed17.log"
+    },
+    {
+      "config": {
+        "name": "default",
+        "data_width": 8,
+        "stages": 3,
+        "bias": 7
+      },
+      "variant": "correct",
+      "seed": 2026,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=3",
+        "-D",
+        "BIAS=7",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019634,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-correct.vvp",
+        "+SEED=2026"
+      ],
+      "simulation_seconds": 0.010099,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "default-correct-seed2026.log"
+    },
+    {
+      "config": {
+        "name": "default",
+        "data_width": 8,
+        "stages": 3,
+        "bias": 7
+      },
+      "variant": "mutant",
+      "seed": 1,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=3",
+        "-D",
+        "BIAS=7",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019909,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-mutant.vvp",
+        "+SEED=1"
+      ],
+      "simulation_seconds": 0.010662,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "default-mutant-seed1.log"
+    },
+    {
+      "config": {
+        "name": "default",
+        "data_width": 8,
+        "stages": 3,
+        "bias": 7
+      },
+      "variant": "mutant",
+      "seed": 17,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=3",
+        "-D",
+        "BIAS=7",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019909,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-mutant.vvp",
+        "+SEED=17"
+      ],
+      "simulation_seconds": 0.010441,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "default-mutant-seed17.log"
+    },
+    {
+      "config": {
+        "name": "default",
+        "data_width": 8,
+        "stages": 3,
+        "bias": 7
+      },
+      "variant": "mutant",
+      "seed": 2026,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=8",
+        "-D",
+        "STAGES=3",
+        "-D",
+        "BIAS=7",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019909,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/default-mutant.vvp",
+        "+SEED=2026"
+      ],
+      "simulation_seconds": 0.010756,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "default-mutant-seed2026.log"
+    },
+    {
+      "config": {
+        "name": "deep_wide",
+        "data_width": 16,
+        "stages": 5,
+        "bias": 257
+      },
+      "variant": "correct",
+      "seed": 1,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=16",
+        "-D",
+        "STAGES=5",
+        "-D",
+        "BIAS=257",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019054,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-correct.vvp",
+        "+SEED=1"
+      ],
+      "simulation_seconds": 0.010723,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "deep_wide-correct-seed1.log"
+    },
+    {
+      "config": {
+        "name": "deep_wide",
+        "data_width": 16,
+        "stages": 5,
+        "bias": 257
+      },
+      "variant": "correct",
+      "seed": 17,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=16",
+        "-D",
+        "STAGES=5",
+        "-D",
+        "BIAS=257",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019054,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-correct.vvp",
+        "+SEED=17"
+      ],
+      "simulation_seconds": 0.010813,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "deep_wide-correct-seed17.log"
+    },
+    {
+      "config": {
+        "name": "deep_wide",
+        "data_width": 16,
+        "stages": 5,
+        "bias": 257
+      },
+      "variant": "correct",
+      "seed": 2026,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=16",
+        "-D",
+        "STAGES=5",
+        "-D",
+        "BIAS=257",
+        "-D",
+        "MUTANT=0",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-correct.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019054,
+      "simulation_returncode": 0,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-correct.vvp",
+        "+SEED=2026"
+      ],
+      "simulation_seconds": 0.010606,
+      "timed_out": false,
+      "expected_marker": "TEST_PASS: reset recovery verified",
+      "expected_outcome_observed": true,
+      "log": "deep_wide-correct-seed2026.log"
+    },
+    {
+      "config": {
+        "name": "deep_wide",
+        "data_width": 16,
+        "stages": 5,
+        "bias": 257
+      },
+      "variant": "mutant",
+      "seed": 1,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=16",
+        "-D",
+        "STAGES=5",
+        "-D",
+        "BIAS=257",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019036,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-mutant.vvp",
+        "+SEED=1"
+      ],
+      "simulation_seconds": 0.011469,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "deep_wide-mutant-seed1.log"
+    },
+    {
+      "config": {
+        "name": "deep_wide",
+        "data_width": 16,
+        "stages": 5,
+        "bias": 257
+      },
+      "variant": "mutant",
+      "seed": 17,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=16",
+        "-D",
+        "STAGES=5",
+        "-D",
+        "BIAS=257",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019036,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-mutant.vvp",
+        "+SEED=17"
+      ],
+      "simulation_seconds": 0.018378,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "deep_wide-mutant-seed17.log"
+    },
+    {
+      "config": {
+        "name": "deep_wide",
+        "data_width": 16,
+        "stages": 5,
+        "bias": 257
+      },
+      "variant": "mutant",
+      "seed": 2026,
+      "compile_command": [
+        "iverilog",
+        "-g2012",
+        "-s",
+        "tb_reset_recovery",
+        "-D",
+        "DATA_WIDTH=16",
+        "-D",
+        "STAGES=5",
+        "-D",
+        "BIAS=257",
+        "-D",
+        "MUTANT=1",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-mutant.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/rtl/response_pipeline.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv"
+      ],
+      "compile_returncode": 0,
+      "compile_seconds": 0.019036,
+      "simulation_returncode": 1,
+      "simulation_command": [
+        "vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/deep_wide-mutant.vvp",
+        "+SEED=2026"
+      ],
+      "simulation_seconds": 0.011261,
+      "timed_out": false,
+      "expected_marker": "RESET_FLUSH_CHECK_FAILED:",
+      "expected_outcome_observed": true,
+      "log": "deep_wide-mutant-seed2026.log"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "run_id": "20260915T054401.047878Z-d58d96f0",
+  "generated_utc": "2026-09-15T05:44:06.816505+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python_version": "3.9.6",
+  "timeout_seconds_per_process": 120.0,
+  "runner_sha256": "0df0ad5186a9a64240d46e10d1215baa2145c28c5be5cb74f320e2f28305c057",
+  "jobs": [
+    {
+      "name": "ready-valid-verification",
+      "url": "https://github.com/Rivoryxa-Technologies/ready-valid-verification.git",
+      "expected_revision": "7c4c1913d7db92192b13de47dcb666f445c4717e",
+      "executed_revision": "7c4c1913d7db92192b13de47dcb666f445c4717e",
+      "passed": true,
+      "validation": "verified exact outcomes and source hashes",
+      "steps": [
+        {
+          "command": [
+            "/usr/bin/git",
+            "init",
+            "-q"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.022375,
+          "log": "git-init.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "fetch",
+            "--depth",
+            "1",
+            "https://github.com/Rivoryxa-Technologies/ready-valid-verification.git",
+            "7c4c1913d7db92192b13de47dcb666f445c4717e"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 1.558703,
+          "log": "git-fetch.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "checkout",
+            "-q",
+            "--detach",
+            "FETCH_HEAD"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.022378,
+          "log": "git-checkout.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "rev-parse",
+            "HEAD"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.013604,
+          "log": "git-revision.log"
+        },
+        {
+          "command": [
+            "python3",
+            "run.py",
+            "--evidence-dir",
+            "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.384468,
+          "log": "test.log"
+        }
+      ],
+      "seconds": 2.001528,
+      "validated_summary": "validated-summary.json"
+    },
+    {
+      "name": "reset-recovery-verification",
+      "url": "https://github.com/Rivoryxa-Technologies/reset-recovery-verification.git",
+      "expected_revision": "66555fcb2a060e9269dbc464d6b20fc1cfb3415e",
+      "executed_revision": "66555fcb2a060e9269dbc464d6b20fc1cfb3415e",
+      "passed": true,
+      "validation": "verified exact outcomes and source hashes",
+      "steps": [
+        {
+          "command": [
+            "/usr/bin/git",
+            "init",
+            "-q"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.020294,
+          "log": "git-init.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "fetch",
+            "--depth",
+            "1",
+            "https://github.com/Rivoryxa-Technologies/reset-recovery-verification.git",
+            "66555fcb2a060e9269dbc464d6b20fc1cfb3415e"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 1.306951,
+          "log": "git-fetch.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "checkout",
+            "-q",
+            "--detach",
+            "FETCH_HEAD"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.024804,
+          "log": "git-checkout.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "rev-parse",
+            "HEAD"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.013626,
+          "log": "git-revision.log"
+        },
+        {
+          "command": [
+            "python3",
+            "tools/run.py"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.432353,
+          "log": "test.log"
+        }
+      ],
+      "seconds": 1.798028,
+      "validated_summary": "validated-summary.json"
+    },
+    {
+      "name": "round-robin-verification",
+      "url": "https://github.com/Rivoryxa-Technologies/round-robin-verification.git",
+      "expected_revision": "049b015a782d48ae3ed491a2ef102147e7906705",
+      "executed_revision": "049b015a782d48ae3ed491a2ef102147e7906705",
+      "passed": true,
+      "validation": "verified exact outcomes and source hashes",
+      "steps": [
+        {
+          "command": [
+            "/usr/bin/git",
+            "init",
+            "-q"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.024394,
+          "log": "git-init.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "fetch",
+            "--depth",
+            "1",
+            "https://github.com/Rivoryxa-Technologies/round-robin-verification.git",
+            "049b015a782d48ae3ed491a2ef102147e7906705"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 1.223885,
+          "log": "git-fetch.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "checkout",
+            "-q",
+            "--detach",
+            "FETCH_HEAD"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.028593,
+          "log": "git-checkout.log"
+        },
+        {
+          "command": [
+            "/usr/bin/git",
+            "rev-parse",
+            "HEAD"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.014458,
+          "log": "git-revision.log"
+        },
+        {
+          "command": [
+            "python3",
+            "tools/run.py",
+            "--artifacts",
+            "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/round-robin-verification/evidence"
+          ],
+          "returncode": 0,
+          "timed_out": false,
+          "seconds": 0.608972,
+          "log": "test.log"
+        }
+      ],
+      "seconds": 1.900302,
+      "validated_summary": "validated-summary.json"
+    }
+  ],
+  "total_seconds": 5.780837,
+  "passed": true
+}

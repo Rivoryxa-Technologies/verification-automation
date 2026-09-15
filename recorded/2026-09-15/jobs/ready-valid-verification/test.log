@@ -1,0 +1,9 @@
+correct-w1-s7: EXPECTED (compile=0, run=0)
+mutant-w1-s7: EXPECTED (compile=0, run=1)
+correct-w8-s1: EXPECTED (compile=0, run=0)
+mutant-w8-s1: EXPECTED (compile=0, run=1)
+correct-w8-s2025: EXPECTED (compile=0, run=0)
+mutant-w8-s2025: EXPECTED (compile=0, run=1)
+correct-w17-s99: EXPECTED (compile=0, run=0)
+mutant-w17-s99: EXPECTED (compile=0, run=1)
+evidence: /private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/summary.json

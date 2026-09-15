@@ -1,0 +1,4 @@
+ASSERT_FAIL test=persistent_requester_bound width=4 seed=17 message=STARVATION: persistent requester missed bound of WIDTH accepted grants
+TEST_RESULT FAIL test=persistent_requester_bound width=4 seed=17 failures=1
+FATAL: /private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/round-robin-verification/repo/tb/arbiter_tb.sv:154: verification failed
+       Time: 56000  Scope: arbiter_tb

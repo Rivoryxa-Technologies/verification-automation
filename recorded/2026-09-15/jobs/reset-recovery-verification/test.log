@@ -1,0 +1,20 @@
+PASS: short_narrow correct seed=1
+PASS: short_narrow correct seed=17
+PASS: short_narrow correct seed=2026
+PASS: short_narrow mutant seed=1
+PASS: short_narrow mutant seed=17
+PASS: short_narrow mutant seed=2026
+PASS: default correct seed=1
+PASS: default correct seed=17
+PASS: default correct seed=2026
+PASS: default mutant seed=1
+PASS: default mutant seed=17
+PASS: default mutant seed=2026
+PASS: deep_wide correct seed=1
+PASS: deep_wide correct seed=17
+PASS: deep_wide correct seed=2026
+PASS: deep_wide mutant seed=1
+PASS: deep_wide mutant seed=17
+PASS: deep_wide mutant seed=2026
+SUMMARY: PASS
+EVIDENCE: /private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/runs/20260915T054404.488940Z-ce0eeb80/summary.json

@@ -85,3 +85,7 @@ multi-tenant isolation, object storage, signatures, or a web API.
 - `.github/workflows/verification.yml` — clean Linux execution and artifact upload
 
 This project is available under the MIT License.
+
+## Recorded run
+
+See [the independent reproduction](recorded/2026-09-15/README.md) for the complete public regression matrix, raw logs, hashes, and measured durations.

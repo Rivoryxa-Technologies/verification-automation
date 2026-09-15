@@ -1,0 +1,82 @@
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x0 after reset
+LATENCY_CHECK_FAILED: expected_cycle=15 actual_cycle=12
+ORDERING_DATA_CHECK_FAILED: expected=0x48 actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=16 actual_cycle=13
+ORDERING_DATA_CHECK_FAILED: expected=0x49 actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=17 actual_cycle=15
+ORDERING_DATA_CHECK_FAILED: expected=0x4a actual=0x48
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x49 after reset
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x4a after reset
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+LATENCY_CHECK_FAILED: expected_cycle=33 actual_cycle=30
+ORDERING_DATA_CHECK_FAILED: expected=0x40 actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=35 actual_cycle=33
+ORDERING_DATA_CHECK_FAILED: expected=0x1a actual=0x40
+LATENCY_CHECK_FAILED: expected_cycle=36 actual_cycle=35
+ORDERING_DATA_CHECK_FAILED: expected=0xf6 actual=0x1a
+RESET_FLUSH_CHECK_FAILED: ghost response data=0xf6 after reset
+LATENCY_CHECK_FAILED: expected_cycle=43 actual_cycle=42
+ORDERING_DATA_CHECK_FAILED: expected=0x8a actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=44 actual_cycle=43
+ORDERING_DATA_CHECK_FAILED: expected=0xa6 actual=0x8a
+LATENCY_CHECK_FAILED: expected_cycle=45 actual_cycle=44
+ORDERING_DATA_CHECK_FAILED: expected=0x94 actual=0xa6
+LATENCY_CHECK_FAILED: expected_cycle=47 actual_cycle=45
+ORDERING_DATA_CHECK_FAILED: expected=0x30 actual=0x94
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+LATENCY_CHECK_FAILED: expected_cycle=53 actual_cycle=50
+ORDERING_DATA_CHECK_FAILED: expected=0xc6 actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=54 actual_cycle=52
+ORDERING_DATA_CHECK_FAILED: expected=0x2 actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=55 actual_cycle=53
+ORDERING_DATA_CHECK_FAILED: expected=0xbe actual=0xc6
+LATENCY_CHECK_FAILED: expected_cycle=57 actual_cycle=54
+ORDERING_DATA_CHECK_FAILED: expected=0x70 actual=0x2
+RESET_FLUSH_CHECK_FAILED: ghost response data=0xbe after reset
+LATENCY_CHECK_FAILED: expected_cycle=59 actual_cycle=57
+ORDERING_DATA_CHECK_FAILED: expected=0x44 actual=0x70
+LATENCY_CHECK_FAILED: expected_cycle=61 actual_cycle=59
+ORDERING_DATA_CHECK_FAILED: expected=0x38 actual=0x44
+LATENCY_CHECK_FAILED: expected_cycle=62 actual_cycle=61
+ORDERING_DATA_CHECK_FAILED: expected=0x64 actual=0x38
+LATENCY_CHECK_FAILED: expected_cycle=63 actual_cycle=62
+ORDERING_DATA_CHECK_FAILED: expected=0x4 actual=0x64
+LATENCY_CHECK_FAILED: expected_cycle=64 actual_cycle=63
+ORDERING_DATA_CHECK_FAILED: expected=0xaa actual=0x4
+LATENCY_CHECK_FAILED: expected_cycle=65 actual_cycle=64
+ORDERING_DATA_CHECK_FAILED: expected=0xe0 actual=0xaa
+LATENCY_CHECK_FAILED: expected_cycle=66 actual_cycle=65
+ORDERING_DATA_CHECK_FAILED: expected=0x90 actual=0xe0
+LATENCY_CHECK_FAILED: expected_cycle=67 actual_cycle=66
+ORDERING_DATA_CHECK_FAILED: expected=0xb4 actual=0x90
+LATENCY_CHECK_FAILED: expected_cycle=68 actual_cycle=67
+ORDERING_DATA_CHECK_FAILED: expected=0x8e actual=0xb4
+LATENCY_CHECK_FAILED: expected_cycle=70 actual_cycle=68
+ORDERING_DATA_CHECK_FAILED: expected=0x2c actual=0x8e
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x2c after reset
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+LATENCY_CHECK_FAILED: expected_cycle=89 actual_cycle=86
+ORDERING_DATA_CHECK_FAILED: expected=0x38 actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=91 actual_cycle=89
+ORDERING_DATA_CHECK_FAILED: expected=0xbc actual=0x38
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+LATENCY_CHECK_FAILED: expected_cycle=95 actual_cycle=92
+ORDERING_DATA_CHECK_FAILED: expected=0xb0 actual=0x0
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x0 after reset
+LATENCY_CHECK_FAILED: expected_cycle=97 actual_cycle=94
+ORDERING_DATA_CHECK_FAILED: expected=0x20 actual=0x0
+RESET_FLUSH_CHECK_FAILED: ghost response data=0xb0 after reset
+LATENCY_CHECK_FAILED: expected_cycle=100 actual_cycle=97
+ORDERING_DATA_CHECK_FAILED: expected=0x12 actual=0x20
+LATENCY_CHECK_FAILED: expected_cycle=101 actual_cycle=100
+ORDERING_DATA_CHECK_FAILED: expected=0x3a actual=0x12
+LATENCY_CHECK_FAILED: expected_cycle=102 actual_cycle=101
+ORDERING_DATA_CHECK_FAILED: expected=0xe4 actual=0x3a
+LATENCY_CHECK_FAILED: expected_cycle=103 actual_cycle=102
+ORDERING_DATA_CHECK_FAILED: expected=0xa actual=0xe4
+LATENCY_CHECK_FAILED: expected_cycle=105 actual_cycle=103
+ORDERING_DATA_CHECK_FAILED: expected=0xc0 actual=0xa
+RESET_FLUSH_CHECK_FAILED: ghost response data=0xc0 after reset
+FATAL: /private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv:186: TEST_FAIL: errors=80
+       Time: 1140000  Scope: tb_reset_recovery

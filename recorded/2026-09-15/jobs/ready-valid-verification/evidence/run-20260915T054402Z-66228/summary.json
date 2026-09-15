@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "ok": true,
+  "runner": "run.py",
+  "python": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "tools": {
+    "iverilog": {
+      "path": "/opt/homebrew/bin/iverilog",
+      "version": "Icarus Verilog version 13.0 (stable) (v13_0)"
+    },
+    "vvp": {
+      "path": "/opt/homebrew/bin/vvp",
+      "version": "Icarus Verilog runtime version 13.0 (stable) (v13_0)"
+    }
+  },
+  "source_sha256": {
+    "run.py": "1e47bdf66e8702680465f7eabc3c3aea44f02913ebdad654c79f9a511d6778d3",
+    "tb/tb_ready_valid.sv": "1369a5a26b5ef9824d05967457c6d29c5a0933408be23b525708111cc7b23b2a",
+    "rtl/ready_valid_buffer.sv": "b484733096bec7a35561b6832a537a9d3a9f5c876fae640fee9c52957be1d8b6",
+    "rtl/ready_valid_buffer_mutant.sv": "349f9f06221b1ca0f7c696f2035bf930d77131a0267209038de63be4a32e1773"
+  },
+  "cases": [
+    {
+      "name": "correct-w1-s7",
+      "implementation": "correct",
+      "width": 1,
+      "seed": 7,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-Ptb.WIDTH=1",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w1-s7.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w1-s7.vvp",
+        "+SEED=7"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "compile_seconds": 0.031838,
+      "run_seconds": 0.015595,
+      "timed_out": false,
+      "expected": "PASS",
+      "outcome_ok": true,
+      "compile_log": "correct-w1-s7-compile.log",
+      "run_log": "correct-w1-s7-run.log"
+    },
+    {
+      "name": "mutant-w1-s7",
+      "implementation": "mutant",
+      "width": 1,
+      "seed": 7,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-DMUTANT",
+        "-Ptb.WIDTH=1",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w1-s7.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer_mutant.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w1-s7.vvp",
+        "+SEED=7"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "compile_seconds": 0.019392,
+      "run_seconds": 0.009426,
+      "timed_out": false,
+      "expected": "FAIL_STABILITY_OR_ORDER",
+      "outcome_ok": true,
+      "compile_log": "mutant-w1-s7-compile.log",
+      "run_log": "mutant-w1-s7-run.log"
+    },
+    {
+      "name": "correct-w8-s1",
+      "implementation": "correct",
+      "width": 8,
+      "seed": 1,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-Ptb.WIDTH=8",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w8-s1.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w8-s1.vvp",
+        "+SEED=1"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "compile_seconds": 0.018589,
+      "run_seconds": 0.012407,
+      "timed_out": false,
+      "expected": "PASS",
+      "outcome_ok": true,
+      "compile_log": "correct-w8-s1-compile.log",
+      "run_log": "correct-w8-s1-run.log"
+    },
+    {
+      "name": "mutant-w8-s1",
+      "implementation": "mutant",
+      "width": 8,
+      "seed": 1,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-DMUTANT",
+        "-Ptb.WIDTH=8",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w8-s1.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer_mutant.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w8-s1.vvp",
+        "+SEED=1"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "compile_seconds": 0.019903,
+      "run_seconds": 0.009837,
+      "timed_out": false,
+      "expected": "FAIL_STABILITY_OR_ORDER",
+      "outcome_ok": true,
+      "compile_log": "mutant-w8-s1-compile.log",
+      "run_log": "mutant-w8-s1-run.log"
+    },
+    {
+      "name": "correct-w8-s2025",
+      "implementation": "correct",
+      "width": 8,
+      "seed": 2025,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-Ptb.WIDTH=8",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w8-s2025.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w8-s2025.vvp",
+        "+SEED=2025"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "compile_seconds": 0.01881,
+      "run_seconds": 0.012294,
+      "timed_out": false,
+      "expected": "PASS",
+      "outcome_ok": true,
+      "compile_log": "correct-w8-s2025-compile.log",
+      "run_log": "correct-w8-s2025-run.log"
+    },
+    {
+      "name": "mutant-w8-s2025",
+      "implementation": "mutant",
+      "width": 8,
+      "seed": 2025,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-DMUTANT",
+        "-Ptb.WIDTH=8",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w8-s2025.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer_mutant.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w8-s2025.vvp",
+        "+SEED=2025"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "compile_seconds": 0.019526,
+      "run_seconds": 0.00964,
+      "timed_out": false,
+      "expected": "FAIL_STABILITY_OR_ORDER",
+      "outcome_ok": true,
+      "compile_log": "mutant-w8-s2025-compile.log",
+      "run_log": "mutant-w8-s2025-run.log"
+    },
+    {
+      "name": "correct-w17-s99",
+      "implementation": "correct",
+      "width": 17,
+      "seed": 99,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-Ptb.WIDTH=17",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w17-s99.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/correct-w17-s99.vvp",
+        "+SEED=99"
+      ],
+      "compile_exit": 0,
+      "run_exit": 0,
+      "compile_seconds": 0.019168,
+      "run_seconds": 0.013437,
+      "timed_out": false,
+      "expected": "PASS",
+      "outcome_ok": true,
+      "compile_log": "correct-w17-s99-compile.log",
+      "run_log": "correct-w17-s99-run.log"
+    },
+    {
+      "name": "mutant-w17-s99",
+      "implementation": "mutant",
+      "width": 17,
+      "seed": 99,
+      "compile_command": [
+        "/opt/homebrew/bin/iverilog",
+        "-g2012",
+        "-Wall",
+        "-DMUTANT",
+        "-Ptb.WIDTH=17",
+        "-s",
+        "tb",
+        "-o",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w17-s99.vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/tb/tb_ready_valid.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer.sv",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/repo/rtl/ready_valid_buffer_mutant.sv"
+      ],
+      "run_command": [
+        "/opt/homebrew/bin/vvp",
+        "/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/ready-valid-verification/evidence/run-20260915T054402Z-66228/mutant-w17-s99.vvp",
+        "+SEED=99"
+      ],
+      "compile_exit": 0,
+      "run_exit": 1,
+      "compile_seconds": 0.028534,
+      "run_seconds": 0.009738,
+      "timed_out": false,
+      "expected": "FAIL_STABILITY_OR_ORDER",
+      "outcome_ok": true,
+      "compile_log": "mutant-w17-s99-compile.log",
+      "run_log": "mutant-w17-s99-run.log"
+    }
+  ]
+}

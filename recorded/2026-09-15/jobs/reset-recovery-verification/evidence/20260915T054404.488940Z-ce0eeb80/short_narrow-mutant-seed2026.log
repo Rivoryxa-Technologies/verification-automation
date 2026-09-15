@@ -1,0 +1,28 @@
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x0 after reset
+LATENCY_CHECK_FAILED: expected_cycle=13 actual_cycle=11
+ORDERING_DATA_CHECK_FAILED: expected=0x44 actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=14 actual_cycle=13
+ORDERING_DATA_CHECK_FAILED: expected=0x45 actual=0x44
+LATENCY_CHECK_FAILED: expected_cycle=15 actual_cycle=14
+ORDERING_DATA_CHECK_FAILED: expected=0x46 actual=0x45
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x46 after reset
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x0 after reset
+RESET_FLUSH_CHECK_FAILED: rsp_valid=1 while reset is active
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x0 after reset
+LATENCY_CHECK_FAILED: expected_cycle=59 actual_cycle=57
+ORDERING_DATA_CHECK_FAILED: expected=0x4c actual=0x0
+LATENCY_CHECK_FAILED: expected_cycle=60 actual_cycle=59
+ORDERING_DATA_CHECK_FAILED: expected=0x7c actual=0x4c
+LATENCY_CHECK_FAILED: expected_cycle=62 actual_cycle=60
+ORDERING_DATA_CHECK_FAILED: expected=0x94 actual=0x7c
+LATENCY_CHECK_FAILED: expected_cycle=63 actual_cycle=62
+ORDERING_DATA_CHECK_FAILED: expected=0xfc actual=0x94
+LATENCY_CHECK_FAILED: expected_cycle=65 actual_cycle=63
+ORDERING_DATA_CHECK_FAILED: expected=0x6a actual=0xfc
+LATENCY_CHECK_FAILED: expected_cycle=67 actual_cycle=65
+ORDERING_DATA_CHECK_FAILED: expected=0x1e actual=0x6a
+RESET_FLUSH_CHECK_FAILED: ghost response data=0x0 after reset
+FATAL: /private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/reset-recovery-verification/repo/tb/tb_reset_recovery.sv:186: TEST_FAIL: errors=26
+       Time: 1110000  Scope: tb_reset_recovery

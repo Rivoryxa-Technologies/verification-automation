@@ -1,0 +1,2 @@
+TEST_RESULT PASS test=all width=7 seed=17 accepted=7
+/private/tmp/rivoryxa-automation-review/artifacts/20260915T054401.047878Z-d58d96f0/jobs/round-robin-verification/repo/tb/arbiter_tb.sv:151: $finish called at 1216000 (1ps)
