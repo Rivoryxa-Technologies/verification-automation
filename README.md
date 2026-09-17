@@ -89,3 +89,16 @@ This project is available under the MIT License.
 ## Recorded run
 
 See [the independent reproduction](recorded/2026-09-15/README.md) for the complete public regression matrix, raw logs, hashes, and measured durations.
+
+---
+
+## More from Rivoryxa
+
+This repository is one public example. The method it demonstrates is applied to
+real OpenHW CORE-V issues in
+[core-v-investigation-reports](https://github.com/Rivoryxa-Technologies/core-v-investigation-reports):
+sixteen public GitHub issues taken to a disposition, each with its evidence,
+proof scope and limits written down.
+
+All examples are listed on the
+[Rivoryxa Technologies profile](https://github.com/Rivoryxa-Technologies).
